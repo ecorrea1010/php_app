@@ -1,0 +1,7 @@
+USE `crud_app`;
+CREATE TABLE IF NOT EXISTS `products` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) UNIQUE NOT NULL,
+  `price` DECIMAL(10,2) NOT NULL,
+  PRIMARY KEY (`id`)
+) DEFAULT CHARSET=utf8mb4;
